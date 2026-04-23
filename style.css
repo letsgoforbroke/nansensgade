@@ -2,6 +2,7 @@
 body {
   margin: 0;
   padding: 40px;
+  background-color: #fcf3ef; /* Beige */
   font-family: "Helvetica Neue", Arial, sans-serif;
   color: #222;
   line-height: 1.6;
@@ -24,7 +25,7 @@ body {
 .header-line-1,
 .header-line-2 {
   font-weight: 600;
-  color: #0033cc;
+  color: #287632; /* Green */
   font-size: 14px;
   letter-spacing: 0.5px;
 }
@@ -57,7 +58,7 @@ body {
 .main-title {
   font-size: 48px;
   font-weight: 700;
-  color: #0033cc;
+  color: #26418c; /* Blue */
   margin-top: 0;
   margin-bottom: 30px;
 }
@@ -66,7 +67,7 @@ body {
 .section-title {
   font-size: 22px;
   font-weight: 600;
-  color: #0033cc;
+  color: #26418c; /* Blue */
   margin-top: 40px;
   margin-bottom: 20px;
 }
@@ -76,6 +77,6 @@ body {
   margin-top: 60px;
   text-align: center;
   font-size: 14px;
-  color: #0033cc;
+  color: #26418c;
   letter-spacing: 0.5px;
 }
