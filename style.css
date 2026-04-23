@@ -11,6 +11,68 @@ html, body {
   margin-right: auto;
 }
 
+/* Global fixes */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+/* Responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Full-width illustration */
+.illustration {
+  width: 100%;
+}
+
+/* Optional full-bleed effect */
+.full-bleed {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+}
+
+/* Better container behavior */
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 16px;
+}
+
+/* Flexible layout */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.col {
+  flex: 1 1 300px;
+}
+
+/* Responsive typography */
+body {
+  font-size: clamp(16px, 1.2vw, 18px);
+}
+
+h1 {
+  font-size: clamp(28px, 5vw, 48px);
+}
+
+/* Mobile tweak */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+}
+
 /* HEADER */
 .page-header {
   text-align: right;
