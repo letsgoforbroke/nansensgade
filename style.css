@@ -12,25 +12,29 @@ html, body {
   line-height: 1.6;
 }
 
-/* ── COLUMN CONSTRAINT ───────────────────────────────────── */
-/* Used on header and the main content wrapper.
-   The hero image lives OUTSIDE this to bleed full-width. */
-.header-inner,
-.content-wrapper {
+/* ── HERO WRAP — establishes stacking context for header ── */
+/* Hero sits at the very top; header is layered over it */
+.hero-wrap {
+  position: relative;
+}
+
+/* ── HEADER — floated over the hero ─────────────────────── */
+.page-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  padding-top: clamp(16px, 3vw, 28px);
+  padding-bottom: clamp(16px, 3vw, 28px);
+}
+
+.header-inner {
   max-width: 760px;
   margin-left: auto;
   margin-right: auto;
   padding-left: clamp(20px, 5vw, 40px);
   padding-right: clamp(20px, 5vw, 40px);
-}
-
-/* ── HEADER ──────────────────────────────────────────────── */
-.page-header {
-  padding-top: clamp(20px, 4vw, 40px);
-  padding-bottom: clamp(20px, 4vw, 40px);
-}
-
-.header-inner {
   text-align: right;
 }
 
@@ -47,19 +51,27 @@ html, body {
   letter-spacing: 0.5px;
 }
 
-/* ── HERO ILLUSTRATION — FULL BLEED ─────────────────────── */
-/* No max-width, no padding — spans the entire viewport */
+/* ── HERO ILLUSTRATION — FULL BLEED, FLUSH TO TOP ───────── */
 .hero-illustration {
   width: 100%;
   margin: 0 0 clamp(20px, 4vw, 40px) 0;
   padding: 0;
-  line-height: 0; /* removes phantom gap below img */
+  line-height: 0;
 }
 
 .hero-illustration img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+/* ── COLUMN CONSTRAINT (content below hero) ──────────────── */
+.content-wrapper {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(20px, 5vw, 40px);
+  padding-right: clamp(20px, 5vw, 40px);
 }
 
 /* ── FLOWER ILLUSTRATION ─────────────────────────────────── */
