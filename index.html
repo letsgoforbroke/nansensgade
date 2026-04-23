@@ -1,198 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discover Nansensgade</title>
-
-    <!-- Google Fonts fallback -->
-    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500&display=swap" rel="stylesheet">
-
-    <style>
-        :root {
-            --bg: #fcf3ef;
-            --green: #287632;
-            --blue: #26418c;
-        }
-
-        body {
-            margin: 0;
-            padding: 0;
-            background: var(--bg);
-            font-family: 'Barlow Condensed', sans-serif;
-            color: #000;
-        }
-
-        /* HEADER */
-        .top-header {
-            font-family: "Andale Mono", monospace;
-            color: var(--green);
-            text-align: center;
-            padding: 20px 0;
-            font-size: 14px;
-            letter-spacing: 1px;
-        }
-
-        /* TITLE */
-        .title-section h1 {
-            text-align: center;
-            font-size: 64px;
-            margin: 20px 0 10px;
-            color: var(--green);
-            font-weight: 400;
-        }
-
-        /* ILLUSTRATION */
-        .illustration-section {
-            display: flex;
-            justify-content: center;
-            margin: 20px 0;
-        }
-
-        .illustration-section img {
-            width: 70%;
-            max-width: 700px;
-        }
-
-        /* TEXT */
-        .text-section {
-            width: 70%;
-            max-width: 800px;
-            margin: 0 auto;
-            font-size: 22px;
-            line-height: 1.4;
-        }
-
-        .text-section h2 {
-            font-size: 32px;
-            color: var(--green);
-            margin-bottom: 10px;
-        }
-
-        /* FLOWER */
-        .flower-section {
-            display: flex;
-            justify-content: center;
-            margin: 40px 0;
-        }
-
-        .flower-section img {
-            width: 120px;
-            opacity: 0.8;
-        }
-
-        /* FOOTER */
-        .bottom-footer {
-            font-family: "Andale Mono", monospace;
-            text-align: center;
-            padding: 20px 0;
-            color: var(--green);
-            font-size: 14px;
-        }
-
-        /* RESPONSIVE BREAKPOINTS */
-        @media (max-width: 768px) {
-
-            .title-section h1 {
-                font-size: 42px;
-                margin-top: 10px;
-            }
-
-            .text-section {
-                width: 90%;
-                font-size: 18px;
-            }
-
-            .text-section h2 {
-                font-size: 26px;
-            }
-
-            .illustration-section img {
-                width: 90%;
-            }
-
-            .flower-section img {
-                width: 80px;
-            }
-
-            .top-header,
-            .bottom-footer {
-                font-size: 12px;
-                padding: 12px 0;
-            }
-        }
-
-        @media (max-width: 480px) {
-
-            .title-section h1 {
-                font-size: 32px;
-            }
-
-            .text-section {
-                font-size: 16px;
-            }
-
-            .illustration-section img {
-                width: 100%;
-            }
-
-            .flower-section img {
-                width: 60px;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Discover Nansensgade</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header class="top-header">
-        <p>LOCALS DO IT / NANSENSGADE 1. JULY / 31. AUGUST</p>
-    </header>
+  <!-- HEADER -->
+  <header class="page-header">
+    <div class="header-lines">
+      <div class="header-line-1">LOCALS DO IT / NANSENSGADE</div>
+      <div class="header-line-2">1. JULY / 31. AUGUST</div>
+    </div>
+  </header>
 
-    <main class="content">
+  <!-- FULL-WIDTH ILLUSTRATION -->
+  <figure class="hero-illustration">
+    <img src="illustration.png" alt="Nansensgade illustration">
+  </figure>
 
-        <section class="title-section">
-            <h1>discover Nansensgade</h1>
-        </section>
+  <!-- MAIN TITLE -->
+  <h1 class="main-title">discover Nansensgade</h1>
 
-        <section class="illustration-section">
-            <img src="illustration.png" alt="Nansensgade Illustration">
-        </section>
+  <!-- SECTION 1 -->
+  <section class="content-section">
+    <h2 class="section-title">Locals Do It / Discover Nansensgade</h2>
 
-        <section class="text-section">
-            <h2>Locals Do It / Discover Nansensgade</h2>
+    <p>
+      A GUIDE TO AN ELEVATED EXPERIENCE IN ONE OF THE COZYIST AND MOST COOL STREETS IN COPENHAGEN.
+      Personal recommandations on what to do and explore from the people who knows the street better
+      than anyone: The locals.
+    </p>
 
-            <p>
-                A guide to an elevated experience in one of the coziest and most cool streets in Copenhagen.
-                Personal recommendations on what to do and explore from the people who know the street better
-                than anyone: the locals.
-            </p>
+    <p>
+      The guide is designed to make it easy and inspiring to explore Nansensgade—whether you are here
+      for the first time or already know the area well. Along the way, you are invited to experience the
+      street at your own pace, with a focus on atmosphere, inspiration, and the small moments that unfold
+      between shops, cafés, and cultural spaces.
+    </p>
 
-            <p>
-                The guide is designed to make it easy and inspiring to explore Nansensgade — whether you are here
-                for the first time or already know the area well. Along the way, you are invited to experience the
-                street at your own pace, with a focus on atmosphere, inspiration, and the small moments that unfold
-                between shops, cafés, and cultural spaces.
-            </p>
+    <p>
+      As part of the concept, each shop featured in the guide offers a summer treat that can be redeemed
+      directly in the street. The brochure can be purchased in all participating shops for 75 DKK and can
+      be redeemed throughout the summer.
+    </p>
 
-            <p>
-                As part of the concept, each shop featured in the guide offers a summer treat that can be redeemed
-                directly in the street. The brochure can be purchased in all participating shops for 75 DKK and can
-                be redeemed throughout the summer.
-            </p>
+    <p>Enjoy your visit.</p>
+  </section>
 
-            <p><strong>Enjoy your visit.</strong></p>
-        </section>
+  <!-- FLOWER ILLUSTRATION -->
+  <figure class="flower-illustration">
+    <img src="flower.png" alt="Flower illustration">
+  </figure>
 
-        <section class="flower-section">
-            <img src="flower.png" alt="Flower Illustration">
-        </section>
+  <!-- SECTION 2 -->
+  <section class="content-section">
+    <h2 class="section-title">The people behind Locals Do It</h2>
 
-    </main>
+    <p>
+      <strong>CAMILLA FRANK</strong> / +25 years of experience as an Editor In Chief in the Scandinavian media
+      marked with a strong focus on lifestyle titels and digital platforms. Also holds a BA in Literature,
+      a degree in Journalism and has a strong Start Up DNA, which has let to opening and running of a pop
+      up cinema, creating art gallery’s and building digital media platforms from scratch – and now to
+      opening Francisca: A vintage high end fashion shop and gallery in Nansensgade.
+    </p>
 
-    <footer class="bottom-footer">
-        <p>INFO · KONTAKT · ANDET?</p>
-    </footer>
+    <p>
+      <strong>MAJA LAUNGAARD ANDERSSON</strong> / Culture-oriented Art Director and Graphic Designer with
+      experience in theatre, literature, fashion, and the museum world. The combination of a Bachelor’s
+      degree in Creative Communication from DMJX and a Master’s in Digital Design and Communication
+      from ITU in Copenhagen supports a practice focused on creating sensory experiences across both
+      physical and digital realms — there’s no reason the two shouldn’t get along just fine.
+    </p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    INFO · KONTAKT · ANDET?
+  </footer>
 
 </body>
 </html>
