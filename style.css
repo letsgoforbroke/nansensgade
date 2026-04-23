@@ -1,0 +1,81 @@
+/* GLOBAL */
+body {
+  margin: 0;
+  padding: 40px;
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #222;
+  line-height: 1.6;
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* HEADER */
+.page-header {
+  text-align: right;
+  margin-bottom: 40px;
+}
+
+.header-lines {
+  display: inline-block;
+  line-height: 1.2;
+}
+
+.header-line-1,
+.header-line-2 {
+  font-weight: 600;
+  color: #0033cc;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+}
+
+/* FULL-WIDTH ILLUSTRATION */
+.hero-illustration {
+  width: 100%;
+  margin: 0 0 20px 0;
+}
+
+.hero-illustration img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* FLOWER ILLUSTRATION */
+.flower-illustration {
+  width: 100%;
+  text-align: center;
+  margin: 40px 0;
+}
+
+.flower-illustration img {
+  max-width: 200px;
+  height: auto;
+}
+
+/* MAIN TITLE */
+.main-title {
+  font-size: 48px;
+  font-weight: 700;
+  color: #0033cc;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+/* SECTION TITLE */
+.section-title {
+  font-size: 22px;
+  font-weight: 600;
+  color: #0033cc;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 60px;
+  text-align: center;
+  font-size: 14px;
+  color: #0033cc;
+  letter-spacing: 0.5px;
+}
