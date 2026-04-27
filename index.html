@@ -3,92 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Discover Nansensgade</title>
+  <title>Locals Do It</title>
+  <link rel="icon" type="image/png" href="LocalsDoIt_FavIcon.png">
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="landing-body">
 
-  <!-- HERO WRAP: header floats over the full-bleed illustration -->
-  <div class="hero-wrap">
+  <!-- TOP BAR -->
+  <header class="landing-header">
+    <nav class="landing-nav">
+      <span class="landing-tagline">Guides and personal recommandations to elevated experiences</span>
+      <button class="hamburger" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
 
-    <header class="page-header">
-      <div class="header-inner">
-        <div class="header-lines">
-          <div class="header-line-1">LOCALS DO IT / NANSENSGADE</div>
-          <div class="header-line-2">1. JULY / 31. AUGUST</div>
-        </div>
-      </div>
-    </header>
+  <!-- NAV OVERLAY -->
+  <div class="nav-overlay" id="navOverlay">
+    <button class="nav-close" id="navClose" aria-label="Close menu">✕</button>
+    <nav class="overlay-nav">
+      <a href="nansensgade.html" class="overlay-link">Discover Nansensgade</a>
+      <a href="mailto:kontakt@localsdoit.dk" class="overlay-link">Kontakt</a>
+      <a href="localsdoit.dk" class="overlay-link">localsdoit.dk</a>
+    </nav>
+  </div>
 
-    <!-- FULL-WIDTH ILLUSTRATION — flush to top of page -->
-    <figure class="hero-illustration">
-      <img src="illustration.png" alt="Nansensgade illustration">
-    </figure>
+  <!-- MAIN CONTENT -->
+  <main class="landing-main">
+    <div class="logo-wrap">
+      <img src="LocalsDoIt_Logo.png" alt="Locals Do It" class="landing-logo">
+    </div>
+  </main>
 
-  </div><!-- /.hero-wrap -->
+  <!-- FOOTER -->
+  <footer class="landing-footer">
+    <span>localsdoit.dk · kontakt@localsdoit.dk · 2026</span>
+  </footer>
 
-  <!-- CONTENT WRAPPER (constrained column) -->
-  <div class="content-wrapper">
+  <script>
+    const hamburger = document.querySelector('.hamburger');
+    const overlay = document.getElementById('navOverlay');
+    const closeBtn = document.getElementById('navClose');
 
-    <!-- SECTION 1 -->
-    <section class="content-section">
-      <h2 class="section-title">Locals Do It / Discover Nansensgade</h2>
-
-      <p>
-        A GUIDE TO AN ELEVATED EXPERIENCE IN ONE OF THE COZYIST AND MOST COOL STREETS IN COPENHAGEN.
-        Personal recommandations on what to do and explore from the people who knows the street better
-        than anyone: The locals.
-      </p>
-
-      <p>
-        The guide is designed to make it easy and inspiring to explore Nansensgade—whether you are here
-        for the first time or already know the area well. Along the way, you are invited to experience the
-        street at your own pace, with a focus on atmosphere, inspiration, and the small moments that unfold
-        between shops, cafés, and cultural spaces.
-      </p>
-
-      <p>
-        As part of the concept, each shop featured in the guide offers a summer treat that can be redeemed
-        directly in the street. The brochure can be purchased in all participating shops for 75 DKK and can
-        be redeemed throughout the summer.
-      </p>
-
-      <p>Enjoy your visit.</p>
-    </section>
-
-    <!-- FLOWER ILLUSTRATION -->
-    <figure class="flower-illustration">
-      <img src="flower1.png" alt="Flower illustration">
-    </figure>
-
-    <!-- SECTION 2 -->
-    <section class="content-section">
-      <h2 class="section-title">The people behind Locals Do It</h2>
-
-      <p>
-        <strong>CAMILLA FRANK</strong> / +25 years of experience as an Editor In Chief in the Scandinavian media
-        marked with a strong focus on lifestyle titels and digital platforms. Also holds a BA in Literature,
-        a degree in Journalism and has a strong Start Up DNA, which has let to opening and running of a pop
-        up cinema, creating art gallery's and building digital media platforms from scratch – and now to
-        opening Francisca: A vintage high end fashion shop and gallery in Nansensgade.
-      </p>
-
-      <p>
-        <strong>MAJA LAUNGAARD ANDERSSON</strong> / Culture-oriented Art Director and Graphic Designer with
-        experience in theatre, literature, fashion, and the museum world. The combination of a Bachelor's
-        degree in Creative Communication from DMJX and a Master's in Digital Design and Communication
-        from ITU in Copenhagen supports a practice focused on creating sensory experiences across both
-        physical and digital realms — there's no reason the two shouldn't get along just fine.
-      </p>
-    </section>
-
-    <!-- FOOTER -->
-    <footer class="footer">
-      INFO · KONTAKT · ANDET?
-    </footer>
-
-  </div><!-- /.content-wrapper -->
+    hamburger.addEventListener('click', () => {
+      overlay.classList.add('open');
+    });
+    closeBtn.addEventListener('click', () => {
+      overlay.classList.remove('open');
+    });
+    overlay.addEventListener('click', (e) => {
+      if (e.target === overlay) overlay.classList.remove('open');
+    });
+  </script>
 
 </body>
 </html>
